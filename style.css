@@ -24,6 +24,7 @@ body{
     position: relative;
     width: 100%;
     background-color: rgb(3, 32, 32);
+    background-color: rgb(4, 17, 3);
 }
 
 .header{
@@ -34,14 +35,15 @@ body{
     padding: 30px;
     background: linear-gradient(rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.73)), url(/img/5.JPG);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 20px;
 }
 
 .header__content h1{
     font-size: 50px;
-    color: rgb(24, 219, 203);
+    color: rgb(112, 219, 24);
 }
 
 .header__content h2{
@@ -176,6 +178,7 @@ body{
     font-size: 18px;
     opacity: 0;
     transition: all .3s;
+    display: none;
 }
 
 
@@ -183,7 +186,7 @@ body{
     cursor: pointer;
 }
 
-.gallery-display-container .images{
+.images{
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
@@ -193,8 +196,10 @@ body{
   margin-left: auto;
   margin-right: auto;
   display: column;
-  columns: 4;
+  columns: 3;
   gap: 1em;
+  padding: 0 20px;
+  margin-top: 40px;
 }
 
 /* TO CANCEL IMAGE */
@@ -225,7 +230,7 @@ body{
 }
 
 
-.gallery-display-container .images > * {
+.images > * {
     break-inside: avoid;
     margin-bottom: 1em;
 }
@@ -266,7 +271,7 @@ body{
 
 .footer {
     padding: 20px 10px;
-    background-color: rgb(3, 32, 32);
+    background-color: rgb(1, 12, 2);
     text-align: center;
     color: white;
     font-size: 1.2rem;
@@ -338,7 +343,7 @@ body{
 /* MEDIA QUERY */
 
 @media (max-width: 980px) {
-    .gallery-display-container .images {
+    .images {
       display: column;
       columns: 3;
       gap: 1em;
@@ -346,7 +351,7 @@ body{
 }
   
 @media (max-width: 680px) {
-    .gallery-display-container .images {
+    .images {
       display: column;
       columns: 2;
       gap: 1em;
@@ -380,7 +385,7 @@ body{
     display: none;
 }
 
-    .gallery-display-container .images {
+    .images {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -446,4 +451,19 @@ body{
     }
 
 
+}
+
+.words{
+    padding: 20px 0;
+    color: white;
+    padding: 30px 20px;
+
+    border-bottom: #fff solid  1px;
+}
+
+.words h1{
+    color: rgb(40, 219, 24)
+}
+.words li{
+    margin-left: 20px;
 }
